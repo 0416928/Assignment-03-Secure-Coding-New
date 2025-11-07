@@ -4,7 +4,7 @@ on:
     branches:
       - main
   pull_request:
-    types: [opened,synchronize]
+    types: [opened, synchronize]
 
 jobs:
   scan:
@@ -21,3 +21,5 @@ jobs:
           args: "./src ./assignment1_code_sample.py ./assignment1_code_sample_2.ts ./assignment1_code_sample_3.java"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ASOC_KEY: ${{ secrets.ASOC_KEY }}
+          ASOC_SECRET: ${{ secrets.ASOC_SECRET }}
