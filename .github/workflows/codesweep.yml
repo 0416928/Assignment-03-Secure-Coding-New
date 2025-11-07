@@ -6,7 +6,7 @@ on:
       - main
   pull_request:
     types: [opened, synchronize]
-  workflow_dispatch:   # allows manual runs
+  workflow_dispatch:
 
 jobs:
   scan:
@@ -16,6 +16,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Show event info
+        run: |
+          echo "Event name: $GITHUB_EVENT_NAME"
+          echo "Event JSON path: $GITHUB_EVENT_PATH"
 
       - name: Run AppScan CodeSweep
         uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v2
