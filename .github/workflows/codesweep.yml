@@ -1,5 +1,8 @@
 name: "HCL AppScan CodeSweep"
 on:
+  push:
+    branches:
+      - main
   pull_request:
     types: [opened,synchronize]
 
@@ -15,6 +18,6 @@ jobs:
       - name: Run AppScan CodeSweep
         uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v2.1
         with:
-          args: "./ --ignore .github/workflows"
+          args: "./ --java --python --typescript --ignore .github/workflows"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
