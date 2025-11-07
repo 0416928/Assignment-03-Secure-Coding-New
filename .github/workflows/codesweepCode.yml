@@ -16,4 +16,3 @@ jobs:
         uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v2.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ASOC_KEY: ${{ secrets.ASOC_KEY }}
