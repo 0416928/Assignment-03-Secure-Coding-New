@@ -12,6 +12,6 @@ jobs:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
           publish_on_merge: true
-          application_id: 7b9e5ee8-610b-4590-800d-e302e10021b7
+          application_id: "7b9e5ee8-610b-4590-800d-e302e10021b7"
     env: 
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
