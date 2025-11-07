@@ -21,8 +21,8 @@ jobs:
         with:
           asoc_key: ${{ secrets.ASOC_KEY }}
           asoc_secret: ${{ secrets.ASOC_SECRET }}
-          path: ./       # your code folder
-          languages: java,python,typescript
           status: failure
-        env: 
+          entryPoint: ./        # <-- scan this folder
+          args: --java --python --typescript   # <-- additional CLI args
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
