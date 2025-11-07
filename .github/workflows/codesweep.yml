@@ -1,11 +1,8 @@
 name: HCL AppScan CodeSweep
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 jobs:
