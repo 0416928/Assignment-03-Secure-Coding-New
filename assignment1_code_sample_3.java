@@ -1,4 +1,4 @@
-// Adding chnage here to make my codesweep extension works.
+// Adding change here to make my codesweep extension works.
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
