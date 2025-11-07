@@ -14,9 +14,6 @@ jobs:
 
       - name: Run AppScan CodeSweep
         uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v2.1
-        with:
-          args: "./src ./assignment1_code_sample.py ./assignment1_code_sample_2.ts ./assignment1_code_sample_3.java --ignore .github"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ASOC_KEY: ${{ secrets.ASOC_KEY }}
-          ASOC_SECRET: ${{ secrets.ASOC_SECRET }}
