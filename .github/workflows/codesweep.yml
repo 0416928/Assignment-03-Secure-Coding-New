@@ -22,6 +22,6 @@ jobs:
           asoc_key: ${{ secrets.ASOC_KEY }}
           asoc_secret: ${{ secrets.ASOC_SECRET }}
           status: failure
-          args: "./Assignment_03_Secure_Coding-New --java --python --typescript"
+          args: "./Assignment_03_Secure_Coding-New"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
