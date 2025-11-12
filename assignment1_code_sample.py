@@ -1,6 +1,4 @@
 # Added python file.
-
-
 import os
 import pymysql
 from urllib.request import urlopen
